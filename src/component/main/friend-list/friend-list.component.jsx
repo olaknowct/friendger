@@ -1,4 +1,5 @@
 import CircleEH from '../../circle-horizontal-ellipsis/circle.eh.component';
+import Avatar, { genConfig } from 'react-nice-avatar';
 import './friend-list.styles.scss';
 
 const FriendList = ({ filteredFriends, toggleLiBackground }) => {
@@ -10,6 +11,8 @@ const FriendList = ({ filteredFriends, toggleLiBackground }) => {
         if (latestMessage.length > 20) latestMessage = latestMessage.substring(0, 20) + '...';
         if (name.length > 15) name = name.substring(0, 15) + '...';
 
+        const config = genConfig(name);
+
         return (
           <li
             onMouseEnter={toggleLiBackground}
@@ -18,13 +21,7 @@ const FriendList = ({ filteredFriends, toggleLiBackground }) => {
             key={name}
           >
             <figure>
-              <img
-                className='align-center justify-start border-circle order-1'
-                height={65}
-                width={65}
-                src='https://plus.unsplash.com/premium_photo-1679392532113-bee46deab9fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'
-                alt=''
-              />
+              <Avatar style={{ width: '8rem', height: '8rem' }} {...config} />
               <figcaption className='flex-col align-center order-2'>
                 <span className='friend-name'>
                   <strong>{name}</strong>
@@ -32,12 +29,10 @@ const FriendList = ({ filteredFriends, toggleLiBackground }) => {
                 <span className='friend-message'>{latestMessage}</span>
               </figcaption>
               <CircleEH toggleCircleBackground={toggleLiBackground} />
-              <img
+              <Avatar
                 className='align-center justify-start border-circle order-4'
-                height={20}
-                width={20}
-                src='https://plus.unsplash.com/premium_photo-1679392532113-bee46deab9fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'
-                alt=''
+                style={{ width: '2rem', height: '2rem' }}
+                {...config}
               />
             </figure>
           </li>
