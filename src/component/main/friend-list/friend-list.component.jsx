@@ -1,8 +1,37 @@
 import CircleEH from '../../circle-horizontal-ellipsis/circle.eh.component';
 import Avatar, { genConfig } from 'react-nice-avatar';
 import './friend-list.styles.scss';
+import { useContext } from 'react';
+import { UserContext } from '../../../context/user.context';
 
-const FriendList = ({ filteredFriends, toggleLiBackground }) => {
+const FriendList = () => {
+  const { filteredFriends, friends } = useContext(UserContext);
+  console.log(friends);
+  const toggleLiBackground = (e) => {
+    const link = e.target;
+    const parent = link.closest('.friend');
+    const parentClass = parent.classList;
+    const circleStyle = parent.querySelector('.circle').style;
+
+    // MouseLeave/UnHover
+    if (parentClass.contains('hover')) {
+      const circleParent = link.closest('.circle');
+      let opacity = 0;
+
+      if (circleParent) opacity = 1;
+
+      circleStyle.opacity = opacity;
+
+      parentClass.remove('hover');
+
+      return;
+    }
+
+    //  MouseEnter/Hover
+    circleStyle.opacity = 1;
+    parentClass.add('hover');
+  };
+
   return (
     <ul className='friends-list'>
       {filteredFriends.map(({ name, messages }) => {
