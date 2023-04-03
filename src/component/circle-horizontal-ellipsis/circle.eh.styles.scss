@@ -1,0 +1,23 @@
+@import '../../sass/variables';
+
+.circle {
+  height: 4rem;
+  width: 4rem;
+  background-color: $color-white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  // display: none;
+  &:hover {
+    background-color: $color-primary;
+  }
+
+  .flex {
+    gap: 0.3rem;
+  }
+  .circle-sm {
+    height: 0.5rem;
+    width: 0.5rem;
+
+    background-color: #6b7280;
+  }
+}
