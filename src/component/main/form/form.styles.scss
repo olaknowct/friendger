@@ -1,0 +1,21 @@
+@import '../../../sass/variables';
+
+.form-search {
+  align-items: center;
+  padding: 0 2rem;
+
+  input {
+    padding: 1.2rem;
+    border: none;
+    background-color: $color-secondary;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    // color: $color-white;
+
+    &:focus {
+      box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.5);
+      outline: none;
+    }
+  }
+}
