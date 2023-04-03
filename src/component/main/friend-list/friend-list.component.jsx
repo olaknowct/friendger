@@ -3,9 +3,11 @@ import Avatar, { genConfig } from 'react-nice-avatar';
 import './friend-list.styles.scss';
 import { useContext } from 'react';
 import { UserContext } from '../../../context/user.context';
+import { MessageContext } from '../../../context/message.context';
 
 const FriendList = () => {
   const { filteredFriends } = useContext(UserContext);
+  const { setPopMessage, popMessage } = useContext(MessageContext);
 
   const toggleLiBackground = (e) => {
     const link = e.target;
@@ -32,6 +34,8 @@ const FriendList = () => {
     parentClass.add('hover');
   };
 
+  const togglePopMessage = () => setPopMessage(!popMessage);
+
   return (
     <ul className='friends-list'>
       {filteredFriends.map(({ name, messages }) => {
@@ -44,6 +48,7 @@ const FriendList = () => {
 
         return (
           <li
+            onClick={togglePopMessage}
             onMouseEnter={toggleLiBackground}
             onMouseLeave={toggleLiBackground}
             className='friends-list__item friend'
