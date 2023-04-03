@@ -1,7 +1,7 @@
 import './messenger.styles.scss';
 
-import Form from '../form/form.component';
-import FriendList from '../friend-list/friend-list.component';
+import Form from './form/form.component';
+import FriendList from './friend-list/friend-list.component';
 
 const Messenger = () => {
   return (
