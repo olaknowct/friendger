@@ -1,0 +1,12 @@
+@import '../../../sass/variables';
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  .title {
+    font-size: 5.2rem;
+    padding: 0.5rem;
+  }
+}
