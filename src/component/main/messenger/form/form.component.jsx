@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import './form.styles.scss';
-import { UserContext } from '../../../context/user.context';
+import { UserContext } from '../../../../context/user.context';
 
 const Form = () => {
   const { setFilteredFriends, friends } = useContext(UserContext);

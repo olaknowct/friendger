@@ -1,13 +1,12 @@
-import CircleEH from '../../circle-horizontal-ellipsis/circle.eh.component';
+import CircleEH from '../../../circle-horizontal-ellipsis/circle.eh.component';
 import Avatar, { genConfig } from 'react-nice-avatar';
 import './friend-list.styles.scss';
 import { useContext } from 'react';
-import { UserContext } from '../../../context/user.context';
-import { MessageContext } from '../../../context/message.context';
-
+import { MessageContext } from '../../../../context/message.context';
+import { UserContext } from '../../../../context/user.context';
 const FriendList = () => {
   const { filteredFriends } = useContext(UserContext);
-  const { setPopMessage, popMessage } = useContext(MessageContext);
+  const { setPopMessage, popMessage, setMessages } = useContext(MessageContext);
 
   const toggleLiBackground = (e) => {
     const link = e.target;
@@ -34,7 +33,10 @@ const FriendList = () => {
     parentClass.add('hover');
   };
 
-  const togglePopMessage = () => setPopMessage(!popMessage);
+  const handlePopMessage = (messages) => {
+    setMessages(messages);
+    setPopMessage(!popMessage);
+  };
 
   return (
     <ul className='friends-list'>
@@ -45,10 +47,9 @@ const FriendList = () => {
         if (name.length > 15) name = name.substring(0, 15) + '...';
 
         const config = genConfig(name);
-
         return (
           <li
-            onClick={togglePopMessage}
+            onClick={() => handlePopMessage(messages)}
             onMouseEnter={toggleLiBackground}
             onMouseLeave={toggleLiBackground}
             className='friends-list__item friend'
