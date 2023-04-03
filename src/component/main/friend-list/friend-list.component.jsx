@@ -5,8 +5,8 @@ import { useContext } from 'react';
 import { UserContext } from '../../../context/user.context';
 
 const FriendList = () => {
-  const { filteredFriends, friends } = useContext(UserContext);
-  console.log(friends);
+  const { filteredFriends } = useContext(UserContext);
+
   const toggleLiBackground = (e) => {
     const link = e.target;
     const parent = link.closest('.friend');
