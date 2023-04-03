@@ -7,7 +7,7 @@ import Form from '../form/form.component';
 import FriendList from '../friend-list/friend-list.component';
 
 const Section = () => {
-  const [friends, setFriends] = useState(users);
+  const [friends] = useState(users);
   const [filteredFriends, setFilteredFriends] = useState(friends);
 
   const toggleLiBackground = (e) => {
@@ -47,6 +47,7 @@ const Section = () => {
     <section className='main-header '>
       <h1 className='title'>Friend List</h1>
       <Form onChangeHandler={onChangeHandler} />
+
       <FriendList toggleLiBackground={toggleLiBackground} filteredFriends={filteredFriends} />
     </section>
   );
