@@ -7,7 +7,7 @@ const Messenger = () => {
   return (
     <div className='messenger-container'>
       <section className='main-header '>
-        <h1 className='title'>Friend List</h1>
+        <h1 className='title'>FriendGer</h1>
         <Form />
 
         <FriendList />

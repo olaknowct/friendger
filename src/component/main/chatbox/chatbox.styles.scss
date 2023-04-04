@@ -74,7 +74,7 @@
 
   .left-message {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-right: 2rem;
 
     span {
@@ -87,7 +87,7 @@
 
   .right-message {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin-left: 2rem;
 
     span {
