@@ -8,19 +8,56 @@ export const users = [
     messages: [
       {
         myMessage: true,
-        message: 'lorem gfdsgfdsgfdssssssssssssssssssssssvsssss ss',
-        date: 'today',
-      },
-
-      {
-        myMessage: true,
-        message: 'lorem gfdsgffasdfasdfadsfadsgfds',
+        message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
         date: 'today',
       },
 
       {
         myMessage: false,
-        message: 'lorem fdsafsdafasfdsafdsafdsa',
+        message: 'sed do eiusmod tempor incididunt ut labore et d',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'trud exercitation ullamco laboris nisi ut ',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'rspiciatis unde omnis iste natus error sit volup',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: ' quia consequuntur magni dolores eos',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut ali',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message:
+          'ou how all this mistaken idea of denouncing pleasure and praising pain was born a',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'e rejects, dislikes, or avoids pleasure itself, be',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'self, because it is pain, bu',
         date: 'today',
       },
     ],
@@ -49,20 +86,57 @@ export const users = [
     email: 'Shanna@melissa.tv',
     messages: [
       {
-        myMessage: true,
-        message: 'lorem gfdsgfdsgfds',
+        myMessage: false,
+        message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
         date: 'today',
       },
 
       {
         myMessage: true,
-        message: 'lorem gfdsgffasdfasdfadsfadsgfds',
+        message: 'sed do eiusmod tempor incididunt ut labore et d',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'trud exercitation ullamco laboris nisi ut ',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'rspiciatis unde omnis iste natus error sit volup',
         date: 'today',
       },
 
       {
         myMessage: false,
-        message: 'lorem fdsafsdafasfdsafdsafdsa',
+        message: ' quia consequuntur magni dolores eos',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut ali',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message:
+          'ou how all this mistaken idea of denouncing pleasure and praising pain was born a',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'e rejects, dislikes, or avoids pleasure itself, be',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'self, because it is pain, bu',
         date: 'today',
       },
     ],
@@ -91,20 +165,57 @@ export const users = [
     email: 'Nathan@yesenia.net',
     messages: [
       {
-        myMessage: true,
-        message: 'lorem gfdsgfdsgfds',
-        date: 'today',
-      },
-
-      {
-        myMessage: true,
-        message: 'lorem gfdsgffasdfasdfadsfadsgfds',
+        myMessage: false,
+        message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
         date: 'today',
       },
 
       {
         myMessage: false,
-        message: 'lorem fdsafsdafasfdsafdsafdsa',
+        message: 'sed do eiusmod tempor incididunt ut labore et d',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'trud exercitation ullamco laboris nisi ut ',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'rspiciatis unde omnis iste natus error sit volup',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: ' quia consequuntur magni dolores eos',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut ali',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message:
+          'ou how all this mistaken idea of denouncing pleasure and praising pain was born a',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'e rejects, dislikes, or avoids pleasure itself, be',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'self, because it is pain, bu',
         date: 'today',
       },
     ],
@@ -134,19 +245,56 @@ export const users = [
     messages: [
       {
         myMessage: true,
-        message: 'lorem gfdsgfdsgfds',
-        date: 'today',
-      },
-
-      {
-        myMessage: true,
-        message: 'lorem gfdsgffasdfasdfadsfadsgfds',
+        message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
         date: 'today',
       },
 
       {
         myMessage: false,
-        message: 'lorem fdsafsdafasfdsafdsafdsa',
+        message: 'sed do eiusmod tempor incididunt ut labore et d',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'trud exercitation ullamco laboris nisi ut ',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'rspiciatis unde omnis iste natus error sit volup',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: ' quia consequuntur magni dolores eos',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut ali',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message:
+          'ou how all this mistaken idea of denouncing pleasure and praising pain was born a',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'e rejects, dislikes, or avoids pleasure itself, be',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'self, because it is pain, bu',
         date: 'today',
       },
     ],
@@ -176,19 +324,56 @@ export const users = [
     messages: [
       {
         myMessage: true,
-        message: 'lorem gfdsgfdsgfds',
+        message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
         date: 'today',
       },
 
       {
         myMessage: true,
-        message: 'lorem gfdsgffasdfasdfadsfadsgfds',
+        message: 'sed do eiusmod tempor incididunt ut labore et d',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'trud exercitation ullamco laboris nisi ut ',
         date: 'today',
       },
 
       {
         myMessage: false,
-        message: 'lorem fdsafsdafasfdsafdsafdsa',
+        message: 'rspiciatis unde omnis iste natus error sit volup',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: ' quia consequuntur magni dolores eos',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut ali',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message:
+          'ou how all this mistaken idea of denouncing pleasure and praising pain was born a',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'e rejects, dislikes, or avoids pleasure itself, be',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'self, because it is pain, bu',
         date: 'today',
       },
     ],
@@ -217,20 +402,57 @@ export const users = [
     email: 'Karley_Dach@jasper.info',
     messages: [
       {
-        myMessage: true,
-        message: 'lorem gfdsgfdsgfds',
+        myMessage: false,
+        message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
         date: 'today',
       },
 
       {
         myMessage: true,
-        message: 'lorem gfdsgffasdfasdfadsfadsgfds',
+        message: 'sed do eiusmod tempor incididunt ut labore et d',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'trud exercitation ullamco laboris nisi ut ',
         date: 'today',
       },
 
       {
         myMessage: false,
-        message: 'lorem fdsafsdafasfdsafdsafdsa',
+        message: 'rspiciatis unde omnis iste natus error sit volup',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: ' quia consequuntur magni dolores eos',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut ali',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message:
+          'ou how all this mistaken idea of denouncing pleasure and praising pain was born a',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'e rejects, dislikes, or avoids pleasure itself, be',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'self, because it is pain, bu',
         date: 'today',
       },
     ],
@@ -259,20 +481,57 @@ export const users = [
     email: 'Telly.Hoeger@billy.biz',
     messages: [
       {
-        myMessage: true,
-        message: 'lorem gfdsgfdsgfds',
+        myMessage: false,
+        message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
         date: 'today',
       },
 
       {
         myMessage: true,
-        message: 'lorem gfdsgffasdfasdfadsfadsgfds',
+        message: 'sed do eiusmod tempor incididunt ut labore et d',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'trud exercitation ullamco laboris nisi ut ',
         date: 'today',
       },
 
       {
         myMessage: false,
-        message: 'lorem fdsafsdafasfdsafdsafdsa',
+        message: 'rspiciatis unde omnis iste natus error sit volup',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: ' quia consequuntur magni dolores eos',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut ali',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message:
+          'ou how all this mistaken idea of denouncing pleasure and praising pain was born a',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'e rejects, dislikes, or avoids pleasure itself, be',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'self, because it is pain, bu',
         date: 'today',
       },
     ],
@@ -301,20 +560,57 @@ export const users = [
     email: 'Sherwood@rosamond.me',
     messages: [
       {
-        myMessage: true,
-        message: 'lorem gfdsgfdsgfds',
+        myMessage: false,
+        message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
         date: 'today',
       },
 
       {
         myMessage: true,
-        message: 'lorem gfdsgffasdfasdfadsfadsgfds',
+        message: 'sed do eiusmod tempor incididunt ut labore et d',
         date: 'today',
       },
 
       {
         myMessage: false,
-        message: 'lorem fdsafsdafasfdsafdsafdsa',
+        message: 'trud exercitation ullamco laboris nisi ut ',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'rspiciatis unde omnis iste natus error sit volup',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: ' quia consequuntur magni dolores eos',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut ali',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message:
+          'ou how all this mistaken idea of denouncing pleasure and praising pain was born a',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'e rejects, dislikes, or avoids pleasure itself, be',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'self, because it is pain, bu',
         date: 'today',
       },
     ],
@@ -344,19 +640,56 @@ export const users = [
     messages: [
       {
         myMessage: true,
-        message: 'lorem gfdsgfdsgfds',
-        date: 'today',
-      },
-
-      {
-        myMessage: true,
-        message: 'lorem gfdsgffasdfasdfadsfadsgfds',
+        message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
         date: 'today',
       },
 
       {
         myMessage: false,
-        message: 'lorem fdsafsdafasfdsafdsafdsa',
+        message: 'sed do eiusmod tempor incididunt ut labore et d',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'trud exercitation ullamco laboris nisi ut ',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'rspiciatis unde omnis iste natus error sit volup',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: ' quia consequuntur magni dolores eos',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut ali',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message:
+          'ou how all this mistaken idea of denouncing pleasure and praising pain was born a',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'e rejects, dislikes, or avoids pleasure itself, be',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'self, because it is pain, bu',
         date: 'today',
       },
     ],
@@ -386,19 +719,56 @@ export const users = [
     messages: [
       {
         myMessage: true,
-        message: 'lorem gfdsgfdsgfds',
-        date: 'today',
-      },
-
-      {
-        myMessage: true,
-        message: 'lorem gfdsgffasdfasdfadsfadsgfds',
+        message: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
         date: 'today',
       },
 
       {
         myMessage: false,
-        message: 'lorem fdsafsdafasfdsafdsafdsa',
+        message: 'sed do eiusmod tempor incididunt ut labore et d',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: 'trud exercitation ullamco laboris nisi ut ',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'rspiciatis unde omnis iste natus error sit volup',
+        date: 'today',
+      },
+
+      {
+        myMessage: true,
+        message: ' quia consequuntur magni dolores eos',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut ali',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message:
+          'ou how all this mistaken idea of denouncing pleasure and praising pain was born a',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'e rejects, dislikes, or avoids pleasure itself, be',
+        date: 'today',
+      },
+
+      {
+        myMessage: false,
+        message: 'self, because it is pain, bu',
         date: 'today',
       },
     ],
