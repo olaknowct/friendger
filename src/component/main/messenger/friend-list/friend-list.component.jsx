@@ -2,11 +2,11 @@ import CircleEH from '../../../circle-horizontal-ellipsis/circle.eh.component';
 import Avatar, { genConfig } from 'react-nice-avatar';
 import './friend-list.styles.scss';
 import { useContext } from 'react';
-import { MessageContext } from '../../../../context/message.context';
+import { InboxContext } from '../../../../context/inbox.context';
 import { UserContext } from '../../../../context/user.context';
 const FriendList = () => {
   const { filteredFriends } = useContext(UserContext);
-  const { setPopMessage, popMessage, setMessages } = useContext(MessageContext);
+  const { setPopInbox, popInbox, setInbox } = useContext(InboxContext);
 
   const toggleLiBackground = (e) => {
     const link = e.target;
@@ -19,10 +19,12 @@ const FriendList = () => {
       const circleParent = link.closest('.circle');
       let opacity = 0;
 
-      if (circleParent) opacity = 1;
+      if (circleParent) {
+        opacity = 1;
+      }
 
+      parent.style.color = 'black';
       circleStyle.opacity = opacity;
-
       parentClass.remove('hover');
 
       return;
@@ -30,12 +32,14 @@ const FriendList = () => {
 
     //  MouseEnter/Hover
     circleStyle.opacity = 1;
+    parent.style.color = 'white';
+
     parentClass.add('hover');
   };
 
-  const handlePopMessage = (messages) => {
-    setMessages(messages);
-    setPopMessage(!popMessage);
+  const handlePopInbox = (data) => {
+    setInbox(data);
+    setPopInbox(!popInbox);
   };
 
   return (
@@ -49,7 +53,7 @@ const FriendList = () => {
         const config = genConfig(name);
         return (
           <li
-            onClick={() => handlePopMessage(messages)}
+            onClick={() => handlePopInbox({ messages, name })}
             onMouseEnter={toggleLiBackground}
             onMouseLeave={toggleLiBackground}
             className='friends-list__item friend'
