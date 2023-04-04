@@ -54,9 +54,9 @@ const ChatBot = () => {
         </header>
         <section className='chatbox-section'>
           <ul className=''>
-            {messages.map(({ message, myMessage }) => {
+            {messages.map(({ id, message, myMessage }) => {
               return (
-                <li className={myMessage ? `left-message` : `right-message`}>
+                <li key={id} className={myMessage ? `left-message` : `right-message`}>
                   <span>{message}</span>
                 </li>
               );
