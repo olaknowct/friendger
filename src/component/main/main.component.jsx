@@ -1,17 +1,16 @@
 import './main.styles.scss';
 import Messenger from './messenger/messenger.component';
 import { UserProvider } from '../../context/user.context';
-import { MessageContext } from '../../context/message.context';
+import { InboxContext } from '../../context/inbox.context';
 import { useContext } from 'react';
-// import { ReactComponent as Phone } from '../../svgs/phone.svg';
-// import { ReactComponent as VideoCamera } from '../../svgs/video-camera.svg';
+import ChatBot from './chatbox/chatbot.component';
 
 const Main = () => {
-  const { popMessage } = useContext(MessageContext);
-  console.log(popMessage);
+  const { popInbox } = useContext(InboxContext);
+
   return (
     <main className='main'>
-      <UserProvider>{popMessage ? <h1>test</h1> : <Messenger />}</UserProvider>
+      <UserProvider>{popInbox ? <ChatBot /> : <Messenger />}</UserProvider>
     </main>
   );
 };
