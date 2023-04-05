@@ -11,13 +11,16 @@ import { ReactComponent as Like } from '../../../svgs/like.svg';
 import { ReactComponent as Gallery } from '../../../svgs/gallery.svg';
 import { ReactComponent as Gif } from '../../../svgs/gif.svg';
 import { ReactComponent as Gift } from '../../../svgs/gift.svg';
+import { UserContext } from '../../../context/user.context';
 
 const ChatBot = () => {
   const { inbox, setPopInbox, popInbox, setInbox } = useContext(InboxContext);
+  const { setFilteredFriends, friends } = useContext(UserContext);
   const { name, messages } = inbox;
   const config = genConfig(name);
 
   const handlePopInbox = (data) => {
+    setFilteredFriends(friends);
     setInbox('');
     setPopInbox(!popInbox);
   };
