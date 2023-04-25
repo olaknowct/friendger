@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react';
 
-type Message = {
-  myMessage: string;
+export type Message = {
+  myMessage: boolean;
   message: string;
   date: string;
 };
