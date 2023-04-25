@@ -1,5 +1,5 @@
 import './global.scss';
-import Main from './component/main/main.component.jsx';
+import Main from './component/main/main.component';
 function App() {
   return (
     <>
