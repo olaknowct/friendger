@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import './chatbox.styles.scss';
-import { InboxContext } from '../../../context/inbox.context';
+import { InboxContext, defaultInboxData } from '../../../context/inbox.context';
 import Avatar, { genConfig } from 'react-nice-avatar';
 import { ReactComponent as Phone } from '../../../svgs/phone.svg';
 import { ReactComponent as VideoCamera } from '../../../svgs/video-camera.svg';
@@ -19,9 +19,9 @@ const ChatBot = () => {
   const { name, messages } = inbox;
   const config = genConfig(name);
 
-  const handlePopInbox = (data) => {
+  const handlePopInbox = () => {
     setFilteredFriends(friends);
-    setInbox('');
+    setInbox(defaultInboxData);
     setPopInbox(!popInbox);
   };
 
@@ -57,9 +57,9 @@ const ChatBot = () => {
         </header>
         <section className='chatbox-section'>
           <ul className=''>
-            {messages.map(({ id, message, myMessage }) => {
+            {messages?.map(({ message, myMessage }, index) => {
               return (
-                <li key={id} className={myMessage ? `left-message` : `right-message`}>
+                <li key={index} className={myMessage ? `left-message` : `right-message`}>
                   <span>{message}</span>
                 </li>
               );
