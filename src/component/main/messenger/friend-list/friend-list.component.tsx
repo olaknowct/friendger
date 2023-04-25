@@ -1,18 +1,19 @@
 import CircleEH from '../../../circle-horizontal-ellipsis/circle.eh.component';
 import Avatar, { genConfig } from 'react-nice-avatar';
 import './friend-list.styles.scss';
-import { useContext } from 'react';
-import { InboxContext } from '../../../../context/inbox.context';
+import React, { useContext } from 'react';
+import { InboxContext, InboxProps } from '../../../../context/inbox.context';
 import { UserContext } from '../../../../context/user.context';
+
 const FriendList = () => {
   const { filteredFriends } = useContext(UserContext);
   const { setPopInbox, popInbox, setInbox } = useContext(InboxContext);
 
-  const toggleLiBackground = (e) => {
-    const link = e.target;
-    const parent = link.closest('.friend');
+  const toggleLiBackground = (e: React.MouseEvent<HTMLElement>) => {
+    const link = e.target as HTMLElement;
+    const parent = link.closest('.friend') as HTMLElement;
     const parentClass = parent.classList;
-    const circleStyle = parent.querySelector('.circle').style;
+    const circleStyle = (parent.querySelector('.circle') as HTMLElement)?.style;
 
     // MouseLeave/UnHover
     if (parentClass.contains('hover')) {
@@ -24,27 +25,27 @@ const FriendList = () => {
       }
 
       parent.style.color = 'black';
-      circleStyle.opacity = opacity;
+      circleStyle.opacity = String(opacity);
       parentClass.remove('hover');
 
       return;
     }
 
     //  MouseEnter/Hover
-    circleStyle.opacity = 1;
+    circleStyle.opacity = '1';
     parent.style.color = 'white';
 
     parentClass.add('hover');
   };
 
-  const handlePopInbox = (data) => {
+  const handlePopInbox = (data: InboxProps) => {
     setInbox(data);
     setPopInbox(!popInbox);
   };
 
   return (
     <ul className='friends-list'>
-      {filteredFriends.map(({ name, messages }) => {
+      {filteredFriends.map(({ name, messages }: InboxProps) => {
         let latestMessage = messages[0].message;
 
         if (latestMessage.length > 20) latestMessage = latestMessage.substring(0, 20) + '...';

@@ -9,7 +9,6 @@ const Messenger = () => {
       <section className='main-header '>
         <h1 className='title'>FriendGer</h1>
         <Form />
-
         <FriendList />
       </section>
     </div>

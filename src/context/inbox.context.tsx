@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 
-export const defaultInboxData: Inbox = {
+export const defaultInboxData: InboxProps = {
   name: '',
   messages: [],
 };
@@ -11,16 +11,16 @@ export type Message = {
   date: string;
 };
 
-type Inbox = {
+export type InboxProps = {
   name: string;
   messages: Message[];
 };
 
 type InboxContextType = {
   popInbox: boolean;
-  inbox: Inbox;
+  inbox: InboxProps;
   setPopInbox: (popInbox: boolean) => void;
-  setInbox: (inbox: Inbox) => void;
+  setInbox: (inbox: InboxProps) => void;
 };
 
 export const InboxContext = createContext<InboxContextType>({
@@ -32,7 +32,7 @@ export const InboxContext = createContext<InboxContextType>({
 
 export const InboxProvider = ({ children }: { children: React.ReactNode }) => {
   const [popInbox, setPopInbox] = useState<boolean>(false);
-  const [inbox, setInbox] = useState<Inbox>(defaultInboxData);
+  const [inbox, setInbox] = useState<InboxProps>(defaultInboxData);
 
   const value: InboxContextType = { popInbox, inbox, setInbox, setPopInbox };
 

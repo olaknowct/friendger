@@ -1,11 +1,11 @@
-import { useContext } from 'react';
+import { useContext, ChangeEventHandler } from 'react';
 import './form.styles.scss';
 import { UserContext } from '../../../../context/user.context';
 
 const Form = () => {
   const { setFilteredFriends, friends } = useContext(UserContext);
 
-  const onChangeHandler = (e) => {
+  const onChangeHandler: ChangeEventHandler<HTMLInputElement> = (e) => {
     const filtered = friends.filter((user) => {
       return user.name.toLowerCase().startsWith(e.target.value.toLowerCase());
     });

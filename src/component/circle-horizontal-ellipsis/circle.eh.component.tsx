@@ -1,6 +1,12 @@
+import React, { MouseEventHandler } from 'react';
 import './circle.eh.styles.scss';
 
-const CircleEH = ({ toggleCircleBackground }) => {
+type CircleEHProps = {
+  toggleCircleBackground: MouseEventHandler;
+};
+
+// const CircleEH: React.FC<CircleEHProps> = ({ toggleCircleBackground }:CircleEHProps) => {
+const CircleEH = ({ toggleCircleBackground }: CircleEHProps) => {
   return (
     <div
       onMouseEnter={toggleCircleBackground}
